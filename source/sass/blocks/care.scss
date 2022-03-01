@@ -71,7 +71,7 @@
     }
 
     @media (max-width: 768px) {
-      width: calc(100% - 30px);
+      width: calc(100% - 100px);
     }
 
     &-text {
@@ -90,5 +90,10 @@
     margin-top: 20px;
     line-height: 36px;
     color: #fff;
+
+    @media (max-width: 500px) {
+      font-size: 13px;
+      line-height: 210%;
+    }
   }
 }

@@ -5,6 +5,12 @@
   align-items: center;
   text-align: center;
 
+  @media (max-width: 500px) {
+    background-image: url('../img/bg-goals.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
   &__inner {
     background-image: url('../img/partners.svg');
     background-size: cover;
@@ -19,6 +25,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 500px) {
+      background-image: url('../img/light.png');
+      padding-top: 30px;
+      background-size: 25%;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    @media (max-width: 400px) {
+      background-size: 45%;
+    }
   }
 
   &__list {
@@ -30,6 +48,23 @@
     @media (max-width: 1300px) {
       width: 90%;
     }
+
+    @media (max-width: 500px) {
+      margin: 25px auto 0;
+      grid-template-columns: 1fr;
+
+      background-color: transparent;
+
+      .head__item-descr {
+        color: white;
+        font-weight: 400;
+        line-height: 160%;
+      }
+
+      .head__item-number {
+        color: #6AD6EF;
+      }
+    }
   }
 
   &__title {
@@ -39,16 +74,28 @@
 
     @media (max-width: 992px) {
       font-size: 40px;
-      margin-bottom: 20px;
+      margin-bottom: 0;
+      font-weight: 400;
     }
   }
 
   &__descr {
     margin-top: 50px;
 
+    &--second {
+      margin-top: 0;
+    }
+
     @media (max-width: 500px) {
       font-size: 16px;
       margin-top: 30px;
+
+      color: white;
+      font-weight: 400;
+
+      &--second {
+        margin-top: 20px;
+      }
     }
   }
 

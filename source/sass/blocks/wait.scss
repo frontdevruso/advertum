@@ -50,11 +50,14 @@
   &__title {
     margin-top: 20px;
 
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
+
     @media (max-width: 500px) {
       margin-bottom: 20px;
       font-size: 30px;
       line-height: 140%;
-      text-align: center;
     }
   }
 
@@ -64,6 +67,9 @@
     @media (max-width: 1024px) {
       max-width: 300px;
       font-size: 20px;
+      text-align: center;
+
+      margin: 0 auto;
     }
 
     @media (max-width: 500px) {

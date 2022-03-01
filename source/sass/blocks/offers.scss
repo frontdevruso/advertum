@@ -11,7 +11,7 @@
     content: '';
     background-image: url('../img/offers.svg');
     background-repeat: repeat;
-    background-size: 7%;
+    background-size: 60%;
     position: absolute;
     left: 0;
     top: 0;
@@ -19,6 +19,10 @@
     right: 0;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 575px) {
+      background-size: 200%;
+    }
   }
 
   .container {
@@ -68,10 +72,7 @@
     border: 1px solid #707070;
     border-radius: 5px;
     
-
-    &--innactive {
-      background-color: #CBCBCA;
-    }
+    &--innactive { background-color: #CBCBCA }
   }
 
   &__item-image {
@@ -79,9 +80,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
-    img {
-      height: 176px;
-    }
+    img { height: 176px }
   }
 
   &__details {
@@ -103,9 +102,7 @@
     font-weight: 700;
     color: #fff;
 
-    span {
-      margin-left: 10px;
-    }
+    span { margin-left: 10px }
 
     &--innactive {
       padding: 10px 27px;
@@ -130,6 +127,14 @@
     font-weight: 400;
   }
 
+  &__ill {
+    display: none;
+
+    @media (max-width: 500px) {
+      top: 50px;
+      margin: 0 auto;
+    }
+  }
 
   &__btn {
     width: 426px;

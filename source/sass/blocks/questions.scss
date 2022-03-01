@@ -89,13 +89,32 @@
 
   &__list-item {
     width: 355px;
+
     background-color: #fff;
     border: 1px solid #707070;
     border-radius: 5px;
+
+    position: relative;
     margin: 0 10px 20px;
+
+    .like-icon {
+      display: none;
+
+      @media (max-width: 500px) {
+        display: block;
+
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
 
     @media (max-width: 500px) {
       margin: 0 0px 20px;
+
+      &:first-child {
+        padding-bottom: 40px;
+      }
     }
   }
 

@@ -64,7 +64,7 @@
   }
 
   &__items {
-    margin: 65px auto 0;
+    margin: 65px auto 45px;
     max-width: 1366px;
     width: 100%;
 
@@ -90,7 +90,7 @@
     }
 
     @media (max-width: 500px) {
-      margin: 40px auto 0;
+      margin: 40px auto;
       padding: 0;
     }
   }
@@ -150,13 +150,15 @@
   }
 
   &__text {
-    margin-top: 45px;
-    max-width: 450px;
     font-size: 16px;
     color: #fff;
 
     @media screen and (max-width: 1500px) {
       padding: 0 15px;
+    }
+
+    @media screen and (max-width: 500px) {
+      &--first { margin-bottom: 20px }
     }
   }
 
