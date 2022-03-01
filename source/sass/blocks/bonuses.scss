@@ -1,0 +1,151 @@
+.bonuses {
+  margin: 100px 10px;
+
+  @media (max-width: 500px) {
+    margin: 50px 10px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1266px;
+    width: 100%;
+    background-color: #CCF4FF;
+    border-radius: 10px;
+    padding: 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (max-width: 1300px) {
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-gap: 20px;
+      grid-template-columns: 100%;
+    }
+
+    @media (max-width: 500px) {
+      background-color: #fff;
+    }
+  }
+
+  &__info {
+    max-width: 460px;
+    padding-left: 75px;
+    height: fit-content;
+
+    @media (max-width: 992px) {
+      margin-right: 40px;
+      margin-bottom: 50px;
+
+      padding: 0 15px;
+    }
+
+    @media (max-width: 500px) {
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+
+      margin: 0 auto;
+      
+      .title { order: 1;}
+      .bonuses__emo-image { order: 2;}
+      .bonuses__text { order: 3;}
+    }
+  }
+
+  &__emo-image {
+    width: 50px;
+    height: 52px;
+
+    @media (max-width: 500px) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    @media (max-width: 992px) {
+      font-size: 40px;
+      line-height: 140%;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 34px;
+    }
+  }
+
+  &__text {
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &__image {
+    width: clamp(320px, 48vw, 672px);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: fit-content;
+    margin-bottom: 120px;
+
+    @media (max-width: 992px) {
+      width: fit-content;
+      margin-left: 100px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__hand {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__numbers, &__cubes {
+    position: absolute;
+  }
+
+  &__numbers {
+    top: Min(20vw, 273px);
+    left: 31%;
+    width: Min(15vw, 228px);
+    z-index: 7;
+
+    @media (max-width: 992px) {
+      top: initial;
+      bottom: 25%;
+      width: 25vw;
+      left: 28%;
+    }
+  }
+
+  &__cubes {
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    max-width: 58%;
+    left: 12%;
+    top: Min(13vw,30%);
+
+    @media (max-width: 992px) {
+      top: Min(22vw,30%);
+    }
+  }
+}

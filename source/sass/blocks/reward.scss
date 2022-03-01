@@ -1,0 +1,136 @@
+.reward {
+  background: linear-gradient(360deg, rgba(10,10,84,1) 0%, rgba(0,44,116,1) 100%);
+  padding: 130px 0 143px;
+
+  @media (max-width: 575px) {
+    padding: 80px 0 100px;
+    background: linear-gradient(90deg, #0A0A54 0%, #1C74BB 100%);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 510px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 72px;
+
+    @media (max-width: 575px) {
+      font-size: 40px;
+      padding: 0 15px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+
+      width: fit-content;
+    }
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+
+      height: fit-content;
+      grid-template-columns: initial;
+
+      grid-gap: 40px;
+    }
+  }
+
+  &__item {
+    width: 212px;
+    min-height: 365px;
+
+    @media (max-width: 992px) {
+      min-height: auto;
+    }
+
+    @media (max-width: 500px) {
+      height: fit-content;
+      min-height: initial;
+    }
+  }
+
+  &__item-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+  }
+
+  &__item-img1 {
+    height: 90px;
+    width: 123px;
+
+    @media (max-width: 500px) {
+      height: auto;
+      width: 90%;
+    }
+  }
+
+  &__item-img2 {
+    margin-top: 25px;
+    height: 92px;
+    width: 126px;
+
+    @media (max-width: 500px) {
+      height: auto;
+      width: 90%;
+    }
+  }
+
+  &__item-img3 {
+    height: 120px;
+    width: 102px;
+
+    @media (max-width: 500px) {
+      height: auto;
+      width: 90%;
+    }
+  }
+
+  &__item-img4 {
+    height: 120px;
+    width: 164px;
+
+    @media (max-width: 500px) {
+      height: auto;
+      width: 90%;
+    }
+  }
+
+  &__item-title {
+    color: #6AD6EF;
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+    }
+  }
+}
