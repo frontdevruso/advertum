@@ -154,7 +154,11 @@
     }
 
     @media (max-width: 500px) {
-      width: 90%;
+      width: 245px;
+
+      background: linear-gradient(270deg, rgba(0,72,147,1) 0%, rgba(53,140,216,1) 100%);
+      &:hover { background: linear-gradient(90deg, #00396D 0%, #0073BE 100%) }
+      &:focus { background: linear-gradient(90deg, #00396D 0%, #0073BE 100%) }
     }
   }
 }

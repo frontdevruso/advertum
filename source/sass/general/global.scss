@@ -154,6 +154,17 @@ input[type="search"]::-webkit-search-results-decoration {
   @media (max-width: 500px) {
     width: 245px;
     height: 50px;
+    font-size: 14px;
+
+    background: linear-gradient(90deg, #FF8D01 0%, #EE2023 100%);
+
+    &:hover {
+      background: linear-gradient(270deg, #FF8D01 0%, #EE2023 100%);
+    }
+
+    &:focus {
+      background: linear-gradient(270deg, #FF8D01 0%, #EE2023 100%);
+    } 
   }
 }
 
