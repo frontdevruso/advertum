@@ -1,7 +1,8 @@
 // slider
 let banner = new Swiper('.missions__slider', {
   slidesPerView: 5,
-  spaceBetween: 15,
+  spaceBetween: 8,
+
   navigation: {
     prevEl: '.missions__slider-btn--prev',
     nextEl: '.missions__slider-btn--next',
@@ -11,13 +12,13 @@ let banner = new Swiper('.missions__slider', {
   },
   breakpoints: {
     1300: {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     0: {
       slidesPerView: 1,

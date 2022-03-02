@@ -1,6 +1,10 @@
 .care {
   padding: 40px 0;
 
+  @media (max-width: 500px) {
+    padding: 180px 0 40px;
+  }
+
   &__wrapper {
     @media (max-width: 1024px) {
       background: linear-gradient(90deg, #0A0A54 0%, #1C74BB 100%);

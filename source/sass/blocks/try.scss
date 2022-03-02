@@ -1,23 +1,23 @@
 .try {
-  padding: 110px 10px;
+  padding: 110px 15px;
 
   @media (max-width: 500px) {
     padding: 0 15px 60px;
   }
 
   &__inner {
-    padding: 60px 15px;
+    padding: 60px 30px;
     background-color: #CCF4FF;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 2px #3cd8ff;
+    box-shadow: 0 0 15px 0px #69e1ff;
     margin: 0 auto;
-    max-width: 1266px;
+    max-width: 1400px;
     width: 100%;
     background-color: #CCF4FF;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     @media (max-width: 992px) {
       display: flex;
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-right: 40px;
+    margin-right: 8%;
 
     @media (max-width: 992px) {
       margin-bottom: 50px;
@@ -104,7 +104,7 @@
     display: flex;
     justify-content: space-between;
     margin: 25px auto 0;
-    max-width: 1266px;
+    max-width: 1400px;
     width: 100%;
 
     @media (max-width: 992px) {
@@ -148,7 +148,7 @@
   &__item-text {
     margin-left: 15px;
     width: 100%;
-    max-width: 320px;
+    max-width: 70%;
 
     @media (max-width: 500px) {
       font-size: 13px;
