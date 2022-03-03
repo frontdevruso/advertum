@@ -25,7 +25,7 @@ gulp.task("css", () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([ autoprefixer('last 99 versions') ]))
     .pipe(csso())
     .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))

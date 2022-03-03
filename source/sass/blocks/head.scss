@@ -66,12 +66,10 @@
     }
 
     @media (max-width: 992px) {
-      min-width: initial;
       width: 100%;
       height: auto;
 
       display: flex;
-      width: fit-content;
       margin-left: 0;
     }
   }

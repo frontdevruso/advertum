@@ -1,8 +1,8 @@
 .care {
-  padding: 40px 0;
+  margin: 40px 0;
 
   @media (max-width: 500px) {
-    padding: 180px 0 40px;
+    margin: 0 0 40px;
   }
 
   &__wrapper {
