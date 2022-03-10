@@ -30,14 +30,14 @@
       bottom: 0;
 
       @media (max-width: 768px) {
-        background-size: 140%;
+        background-size: 130%;
       } 
 
       @media (max-width: 400px) {
         top: 25px;
         right: 10px;
 
-        background-size: 120% 80%; 
+        background-size: 130% 80%; 
         margin: 0 auto;
       } 
     }
@@ -88,12 +88,19 @@
     max-width: 795px;
     height: 350px;
 
-    @media (max-width: 992px) {
-      padding: 0 30px;
-    }
+    @media (max-width: 992px) { padding: 0 30px }
+    @media (max-width: 500px) { display: none }
 
-    @media (max-width: 500px) {
-      height: 200px;
+    &--mb {
+      height: 370px;
+      display: none;
+      width: 85%;
+
+      @media (max-width: 500px) { display: block }
+      @media (max-width: 400px) { 
+        height: 320px;
+        width: 100%;
+      }
     }
   }
 

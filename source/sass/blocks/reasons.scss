@@ -143,6 +143,10 @@
     @media screen and (max-width: 1500px) {
       margin: 0;
     }
+
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+    }
   }
 
   &__item-image {
